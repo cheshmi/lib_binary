@@ -66,6 +66,10 @@
 * -Dlapack_complex_double="std::complex<double>"
 */
 
+// Kazem added this to build in Win
+#define lapack_complex_float std::complex<float>
+#define lapack_complex_double std::complex<double>
+
 #ifndef LAPACK_COMPLEX_CUSTOM
 
 /* Complex type (single precision) */
